@@ -24,7 +24,9 @@
 
 早期与微博文本相关的工作集中在语言分析方面。(Java et al., 2007)对微博的概念和作用进行了总结和探讨，介绍了微博的即时性、共享性、快速传播等特点，并从各个角度统计了微博在近年来的使用增长情况【9】。他们根据用户间的关系，阐述了哪一类的用户会分享相同的微博信息。(Kwak et al., 2010)讨论了微博的出现，作为一种社交网络或是一种新闻媒介对世界的影响【10】。(Ellen, 2011)则对微文本(mircotext)进行了特征分析，认为微文本具有“短”、“文法不规范”和“半结构化”等特点【11】。这些工作，为研究者了解并把握微博文本的特征提供了重要依据。(Locke, 2009)将命名实体识别引入到微博文本的研究中，采用分类的方法将命名实体分为三个不同的类别（人名，地名，机构名）【12】。他指出，微博文本由于具有与普通文本许多不同的特征，所以在进行特征选择时，应该选择微博文本所特有的特征，再进行分类。实验证明，该方法取得了一定程度的提高。
 
-在初步了解了微博文本的语言特点后，研究者们开始尝试对其进行处理。由于微博文本字数少，区别于普通文本的特点很多，所以在大多数使用机器学习的方法对其进行处理时，尝尝会发生严重的数据稀疏问题，对性能产生影响。
+在初步了解了微博文本的语言特点后，研究者们开始尝试对其进行处理。由于微博文本字数少，区别于普通文本的特点很多，所以在大多数使用机器学习的方法对其进行处理时，尝尝会发生严重的数据稀疏问题，对性能产生影响。于是,研究者们对解决数据稀疏问题进行了一 些尝试。(Sriram et al., 2010)等考虑到微博文本区别于普通文 本的特征,共选取了八类特征(即作者信息,发布时 间,标志符号等)【13】。(Zhang et al., 2012)提出了一个基于线性时间复杂度的增量模型的分词算法【4】。他们采用的是基于词的分词算法，同时使用了丰富的特征，包括：字特征(character-based features)，词特征(word-based features)和其他容易使用的可能特征。
+
+可以发现，大多数研究者都对微博文本采用了特殊的特征工程(special feature engineering)，以求实现更好的特征表示和处理效果。这说明国外的学者对于微博文本的处理，普遍认为应该是用特殊的方法，而不是使用同普通文本一样的处理方法、工具等。
 
 （2）国内学术研究现状
 
@@ -48,3 +50,5 @@
 10. Kwak H, Lee C, Park H, et al. What is Twitter, a social network or a news media?[C]//Proceedings of the 19th international conference on World wide web. ACM, 2010: 591-600.
 11. Ellen J. All about Microtext-A Working Definition and a Survey of Current Microtext Research within Artificial Intelligence and Natural Language Processing[J]. ICAART (1), 2011, 11: 329-336.
 12. Locke B W. Named entity recognition: Adapting to microblogging[J]. 2009.
+13. Sriram B, Fuhry D, Demir E, et al. Short text classification in twitter to improve information filtering[C]//Proceedings of the 33rd international ACM SIGIR conference on Research and development in information retrieval. ACM, 2010: 841-842.
+14. Jiang W, Huang L, Liu Q. Automatic adaptation of annotation standards: Chinese word segmentation and POS tagging: a case study[C]//Proceedings of the Joint Conference of the 47th Annual Meeting of the ACL and the 4th International Joint Conference on Natural Language Processing of the AFNLP: Volume 1-Volume 1. Association for Computational Linguistics, 2009: 522-530.
